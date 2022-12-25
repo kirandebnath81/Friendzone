@@ -1,0 +1,26 @@
+.suggested-profiles-wrapper {
+  flex-basis: 28%;
+  height: 100%;
+  min-width: 260px;
+  position: sticky;
+  top: 120px;
+  box-shadow: var(--dark-box-shadow);
+  border-radius: var(--md-radius);
+  padding: 2rem;
+  margin-left: 5rem;
+}
+
+.suggested-profiles-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .suggested-profiles-wrapper {
+    width: clamp(250px, 95%, 500px);
+    position: static;
+    top: 0px;
+    margin: 5rem 0 0 0;
+  }
+}

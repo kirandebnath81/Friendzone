@@ -1,0 +1,21 @@
+.nav-top {
+  height: 70px;
+  top: 0;
+  display: flex;
+  box-shadow: var(--light-box-shadow);
+}
+
+.nav-top .brand {
+  font-weight: 600;
+  font-size: 2.8rem;
+}
+
+.nav-top .nav-items-list .nav-item {
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .nav-top .nav-items-list .large-screen {
+    display: none;
+  }
+}

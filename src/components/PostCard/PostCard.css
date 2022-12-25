@@ -1,0 +1,66 @@
+.postCard {
+  width: 100%;
+  box-shadow: var(--dark-box-shadow);
+  padding: 2.5rem;
+  border-radius: var(--md-radius);
+}
+
+.postCard-user-details {
+  cursor: pointer;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.postCard-avatar {
+  width: 4rem;
+  height: 4rem;
+}
+
+.postCard-profile {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+}
+
+.postCard-name {
+  font-weight: 500;
+  font-size: 1.75rem;
+  margin-right: 1rem;
+  margin-bottom: 0.2rem;
+  white-space: nowrap;
+}
+
+.postCard-text {
+  font-size: 1.8rem;
+}
+
+.postCard-image {
+  width: 100%;
+}
+
+.postCard-image img {
+  width: 100%;
+  border-radius: var(--md-radius);
+}
+
+.postCard-details-container {
+  margin: 3rem 0 1.6rem;
+  font-size: 2rem;
+}
+
+.postCard-details {
+  margin-right: 6rem;
+  cursor: pointer;
+}
+
+.postCard-btn {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.postCard-liked-btn {
+  color: var(--red-color);
+}

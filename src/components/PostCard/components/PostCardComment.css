@@ -1,0 +1,61 @@
+.comments-container {
+  margin-top: 4rem;
+}
+
+.comments-wrapper {
+  margin-top: 3rem;
+}
+
+.comment-input-box input {
+  height: 35px;
+  font-size: 1.5rem;
+}
+
+.comment-add-btn {
+  margin-left: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: var(--sm-radius);
+  user-select: none;
+}
+
+.comment-add-btn-normal {
+  color: var(--primary-color);
+  transition: 250ms background-color ease-in;
+}
+
+.comment-add-btn-normal:hover {
+  background-color: var(--btn-bg-color);
+}
+
+.comment-add-btn-block {
+  color: var(--secondary-text-color);
+  cursor: not-allowed;
+}
+
+/* comment */
+
+.comment-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.comment-avatar {
+  width: 3rem;
+  height: 3rem;
+}
+.comment-creator-name {
+  font-weight: 500;
+  font-size: 1.35rem;
+}
+.comment-posted-comment {
+  font-size: 1.4rem;
+  margin-top: 0.4rem;
+}
+
+.comment-details {
+  margin-left: 1rem;
+}
+
+.comment-menu-icon {
+  font-size: 1.8rem;
+}

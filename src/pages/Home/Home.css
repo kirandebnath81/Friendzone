@@ -1,0 +1,30 @@
+.main-wrapper {
+  position: relative;
+}
+
+.search-input-wrapper {
+  padding: 2rem;
+  margin: 0;
+  border-radius: var(--md-radius);
+  box-shadow: var(--dark-box-shadow);
+}
+
+.searched-users {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  padding: 2rem;
+  border-radius: var(--md-radius);
+  box-shadow: var(--dark-box-shadow);
+  background-color: var(--primary-bg-color);
+}
+
+.sort-user-container select {
+  width: 250px;
+  padding: 0.8rem;
+  border: none;
+  border-radius: var(--sm-radius);
+  box-shadow: var(--light-box-shadow);
+  user-select: none;
+  outline: none;
+}

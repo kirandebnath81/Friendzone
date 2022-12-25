@@ -1,0 +1,7 @@
+.main-wrapper {
+  width: clamp(250px, 95%, 550px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4rem;
+}

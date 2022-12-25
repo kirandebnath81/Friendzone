@@ -1,0 +1,44 @@
+.modal-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.modal {
+  width: clamp(250px, 90%, 450px);
+  border-radius: var(--md-radius);
+  margin-top: 80px;
+}
+
+.modal-title {
+  font-weight: 600;
+  font-size: 2.1rem;
+  margin-bottom: 2rem;
+}
+
+.modal-close-btn {
+  font-size: 2.2rem;
+  transition: 200ms transform ease-in;
+  cursor: pointer;
+}
+.modal-close-btn:hover {
+  transform: scale(1.15);
+}
+
+.modal-textarea {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 2rem;
+  resize: none;
+  outline: none;
+  user-select: none;
+  border-radius: var(--md-radius);
+  padding: 15px;
+  font-weight: 500;
+  font-size: 1.7rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: 150ms border ease-in-out;
+}
+
+.modal-textarea:focus {
+  border: 2px solid var(--primary-color);
+}

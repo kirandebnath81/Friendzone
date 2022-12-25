@@ -1,0 +1,57 @@
+.profile-card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.8rem;
+}
+.profile-card:last-child {
+  margin-bottom: 0.5rem;
+}
+
+.profile-card-avatar,
+.profile-card-follow-btn {
+  width: 4rem;
+  height: 4rem;
+  border-radius: var(--round-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card-avatar {
+  background-color: var(--avatar-bg-color);
+  color: var(--avatar-text-color);
+}
+
+.profile-card-follow-btn {
+  width: 3.7rem;
+  height: 3.7rem;
+  background-color: var(--btn-bg-color);
+  cursor: pointer;
+  transition: 250ms background-color ease-in-out;
+  box-shadow: var(--link-box-shadow);
+}
+
+.profile-card-follow-btn:hover {
+  background-color: var(--btn-hover-bg-color);
+}
+
+.profile-card-follow-btn svg {
+  font-size: 2rem;
+}
+
+.profile-card-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--round-radius);
+}
+
+.profile-card-text-avatar {
+  font-size: 1.75rem;
+}
+
+.profile-card-userName {
+  font-size: 1.35rem;
+  margin-top: 0.3rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+}

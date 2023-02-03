@@ -7,6 +7,8 @@
   margin: 0;
   border-radius: var(--md-radius);
   box-shadow: var(--dark-box-shadow);
+  background-color: var(--secondary-bg-color);
+  transition: var(--bg-color-transition);
 }
 
 .searched-users {
@@ -16,7 +18,8 @@
   padding: 2rem;
   border-radius: var(--md-radius);
   box-shadow: var(--dark-box-shadow);
-  background-color: var(--primary-bg-color);
+  background-color: var(--secondary-bg-color);
+  transition: var(--bg-color-transition);
 }
 
 .sort-user-container select {
@@ -24,7 +27,10 @@
   padding: 0.8rem;
   border: none;
   border-radius: var(--sm-radius);
-  box-shadow: var(--light-box-shadow);
+  box-shadow: var(--dark-box-shadow);
   user-select: none;
   outline: none;
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
+  transition: var(--bg-color-transition), var(--color-transition);
 }

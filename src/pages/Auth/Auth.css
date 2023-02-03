@@ -1,20 +1,12 @@
-.container {
+.auth-container {
   width: clamp(250px, 95%, 460px);
-  background-color: var(--secondary-bg-color);
-  color: var(--primary-text-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.container .auth-container {
-  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 4rem;
-  box-shadow: 0px 1px 5px var(--light-box-shadow-color);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
   border-radius: var(--lg-radius);
-  background-color: white;
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
 }
 
 .auth-container .title {

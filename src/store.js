@@ -1,12 +1,18 @@
 import { configureStore } from "@reduxjs/toolkit";
 
-import { usersReducer, postsReducer, loadingReducer } from "./features";
+import {
+  usersReducer,
+  postsReducer,
+  loadingReducer,
+  themeReducer,
+} from "./features";
 
 const store = configureStore({
   reducer: {
     users: usersReducer,
     posts: postsReducer,
     loading: loadingReducer,
+    theme: themeReducer,
   },
 });
 

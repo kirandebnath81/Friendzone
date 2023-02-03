@@ -75,80 +75,78 @@ const Signup = () => {
   };
 
   return (
-    <div className="container">
-      <div className="auth-container">
-        <div className="title">Create Your Account</div>
-        {isAuthError && <div className="auth-error">{authErrorMsg}</div>}
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="input-wrapper">
-            <input
-              type="text"
-              {...register("name", { required: true })}
-              placeholder="Name"
-              style={inputErrorStyle("name")}
-            />
+    <div className="auth-container">
+      <div className="title">Create Your Account</div>
+      {isAuthError && <div className="auth-error">{authErrorMsg}</div>}
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="input-wrapper">
+          <input
+            type="text"
+            {...register("name", { required: true })}
+            placeholder="Name"
+            style={inputErrorStyle("name")}
+          />
 
-            {errors.name && getInputErrorMsg("name", errors.name?.type)}
-          </div>
-
-          <div className="input-wrapper ">
-            <input
-              type="email"
-              {...register("email", { required: true })}
-              placeholder="Email"
-              style={inputErrorStyle("email")}
-            />
-
-            {errors.email && getInputErrorMsg("email", errors.name?.type)}
-          </div>
-
-          <div className="input-wrapper">
-            <input
-              type="password"
-              {...register("password", { required: true, minLength: 6 })}
-              placeholder="Password"
-              style={inputErrorStyle("password")}
-            />
-
-            {errors.password &&
-              getInputErrorMsg("password", errors.password?.type)}
-          </div>
-
-          <div className="input-wrapper">
-            <input
-              type="password"
-              {...register("confirmPassword", {
-                required: true,
-                minLength: 6,
-              })}
-              placeholder="Confirm Password"
-              style={inputErrorStyle("confirmPassword")}
-            />
-
-            {errors.confirmPassword &&
-              getInputErrorMsg("password", errors.confirmPassword?.type)}
-          </div>
-
-          <button
-            className="btn btn-primary  auth-btn"
-            style={{ marginTop: "3rem" }}
-          >
-            {isLoading ? (
-              <img src={images.whiteLoader} alt="loader-gif" />
-            ) : (
-              "Sign Up"
-            )}
-          </button>
-        </form>
-
-        <GoogleAuth />
-
-        <div className="text-align-center">
-          <span className="mr-s fw-500">Already have an account ?</span>
-          <Link to={"/signin"} className="fw-600 primary-text-color">
-            Sign In
-          </Link>
+          {errors.name && getInputErrorMsg("name", errors.name?.type)}
         </div>
+
+        <div className="input-wrapper ">
+          <input
+            type="email"
+            {...register("email", { required: true })}
+            placeholder="Email"
+            style={inputErrorStyle("email")}
+          />
+
+          {errors.email && getInputErrorMsg("email", errors.name?.type)}
+        </div>
+
+        <div className="input-wrapper">
+          <input
+            type="password"
+            {...register("password", { required: true, minLength: 6 })}
+            placeholder="Password"
+            style={inputErrorStyle("password")}
+          />
+
+          {errors.password &&
+            getInputErrorMsg("password", errors.password?.type)}
+        </div>
+
+        <div className="input-wrapper">
+          <input
+            type="password"
+            {...register("confirmPassword", {
+              required: true,
+              minLength: 6,
+            })}
+            placeholder="Confirm Password"
+            style={inputErrorStyle("confirmPassword")}
+          />
+
+          {errors.confirmPassword &&
+            getInputErrorMsg("password", errors.confirmPassword?.type)}
+        </div>
+
+        <button
+          className="btn btn-primary  auth-btn"
+          style={{ marginTop: "3rem" }}
+        >
+          {isLoading ? (
+            <img src={images.whiteLoader} alt="loader-gif" />
+          ) : (
+            "Sign Up"
+          )}
+        </button>
+      </form>
+
+      <GoogleAuth />
+
+      <div className="text-align-center">
+        <span className="mr-s fw-500">Already have an account ?</span>
+        <Link to={"/signin"} className="fw-600 primary-text-color">
+          Sign In
+        </Link>
       </div>
     </div>
   );

@@ -6,7 +6,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
-  background-color: var(--primary-bg-color);
+  background-color: var(--secondary-bg-color);
+  transition: var(--bg-color-transition);
 }
 
 .navbar .nav-items-list {

@@ -43,6 +43,7 @@ function App() {
   const dispatch = useDispatch();
   const { activeUser } = useSelector((state) => state.users);
   const { isLoading } = useSelector((state) => state.loading);
+  const { themeMode } = useSelector((state) => state.theme);
 
   //get active user data
   useEffect(() => {
@@ -87,7 +88,7 @@ function App() {
   };
 
   return (
-    <div className="app">
+    <div className="app" data-theme={themeMode}>
       {isLoading && <Spinner />}
       <ToastContainer
         position="bottom-left"

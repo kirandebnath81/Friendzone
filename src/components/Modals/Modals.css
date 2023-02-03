@@ -7,6 +7,9 @@
   width: clamp(250px, 90%, 450px);
   border-radius: var(--md-radius);
   margin-top: 80px;
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
+  box-shadow: var(--light-box-shadow);
 }
 
 .modal-title {

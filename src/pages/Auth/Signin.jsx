@@ -66,62 +66,59 @@ const SignIn = () => {
   };
 
   return (
-    <div className="container">
-      <div className="auth-container">
-        <h1 className="title">Sign In To Your Account</h1>
-        {isAuthError && <div className="auth-error">{authErrorMsg}</div>}
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="input-wrapper">
-            <input
-              type="text"
-              placeholder="Email"
-              {...register("email", { required: true })}
-              style={inputErrorStyle("email")}
-            />
+    <div className="auth-container">
+      <h1 className="title">Sign In To Your Account</h1>
+      {isAuthError && <div className="auth-error">{authErrorMsg}</div>}
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="input-wrapper">
+          <input
+            type="text"
+            placeholder="Email"
+            {...register("email", { required: true })}
+            style={inputErrorStyle("email")}
+          />
 
-            {errors.email && getInputErrorMsg("email", errors.email?.type)}
-          </div>
+          {errors.email && getInputErrorMsg("email", errors.email?.type)}
+        </div>
 
-          <div className="input-wrapper">
-            <input
-              type="password"
-              placeholder="Password"
-              {...register("password", { required: true, minLength: 6 })}
-              style={inputErrorStyle("password")}
-            />
-            {errors.password &&
-              getInputErrorMsg("email", errors.password?.type)}
-          </div>
+        <div className="input-wrapper">
+          <input
+            type="password"
+            placeholder="Password"
+            {...register("password", { required: true, minLength: 6 })}
+            style={inputErrorStyle("password")}
+          />
+          {errors.password && getInputErrorMsg("email", errors.password?.type)}
+        </div>
 
-          <button
-            className="btn btn-primary  auth-btn "
-            style={{ marginTop: "3rem" }}
-          >
-            {isLoading?.user ? (
-              <img src={images.whiteLoader} alt="loader-gif" />
-            ) : (
-              "Sign In"
-            )}
-          </button>
-        </form>
-        <GoogleAuth />
-
-        <div
-          className="test-login"
-          onClick={() =>
-            clickHandler("kirandebnath81@gmail.com", "#work#hard$%1")
-          }
+        <button
+          className="btn btn-primary  auth-btn "
+          style={{ marginTop: "3rem" }}
         >
-          <span className="fw-600 cursor">Continue as a Guest</span>
-          {isLoading?.guest && <img src={images.darkLoader} alt="loader-gif" />}
-        </div>
+          {isLoading?.user ? (
+            <img src={images.whiteLoader} alt="loader-gif" />
+          ) : (
+            "Sign In"
+          )}
+        </button>
+      </form>
+      <GoogleAuth />
 
-        <div className="text-align-center">
-          <span className="mr-s fw-500">Don't have an account ?</span>
-          <Link to={"/signup"} className="fw-600 primary-text-color">
-            Sign Up
-          </Link>
-        </div>
+      <div
+        className="test-login"
+        onClick={() =>
+          clickHandler("kirandebnath81@gmail.com", "#work#hard$%1")
+        }
+      >
+        <span className="fw-600 cursor">Continue as a Guest</span>
+        {isLoading?.guest && <img src={images.darkLoader} alt="loader-gif" />}
+      </div>
+
+      <div className="text-align-center">
+        <span className="mr-s fw-500">Don't have an account ?</span>
+        <Link to={"/signup"} className="fw-600 primary-text-color">
+          Sign Up
+        </Link>
       </div>
     </div>
   );

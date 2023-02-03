@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.8rem;
+  color: var(--primary-text-color);
 }
 .profile-card:last-child {
   margin-bottom: 0.5rem;
@@ -25,6 +26,7 @@
 .profile-card-follow-btn {
   width: 3.7rem;
   height: 3.7rem;
+  color: #000;
   background-color: var(--btn-bg-color);
   cursor: pointer;
   transition: 250ms background-color ease-in-out;

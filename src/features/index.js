@@ -14,3 +14,7 @@ export {
 //loading
 export { default as loadingReducer } from "./loading/loadingSlice";
 export { setLoading } from "./loading/loadingSlice";
+
+//theme
+export { default as themeReducer } from "./theme/themeSlice";
+export { toggleTheme } from "./theme/themeSlice";

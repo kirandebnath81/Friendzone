@@ -1,11 +1,14 @@
 .app {
   width: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   padding: 120px 50px 50px;
+  background-color: var(--primary-bg-color);
+  transition: var(--bg-color-transition);
 }
 
-/* avatar */
+/* avatar stars */
 .avatar {
   width: 10rem;
   height: 10rem;
@@ -21,6 +24,7 @@
   height: 100%;
   border-radius: var(--round-radius);
 }
+/* avatar ends */
 
 /* dropdown menu starts */
 .menu-wrapper {
@@ -28,7 +32,7 @@
 }
 
 .menu-icon {
-  transition: 200ms background-color ease-in;
+  transition: 200ms background-color ease-in, 200ms color ease-in;
   border-radius: var(--sm-radius);
   padding: 0.5rem 0.3rem;
   display: flex;
@@ -36,6 +40,7 @@
 }
 .menu-icon:hover {
   background-color: var(--btn-bg-color);
+  color: #000;
 }
 
 .menu {
@@ -46,7 +51,7 @@
   box-shadow: var(--dark-box-shadow);
   border-radius: var(--sm-radius);
   padding: 1rem 0rem;
-  background-color: var(--primary-bg-color);
+  background-color: var(--secondary-bg-color);
 }
 
 .menu-item {
@@ -55,25 +60,32 @@
   align-items: center;
   padding-left: 1.2rem;
   cursor: pointer;
-  transition: 200ms background-color ease-in;
+  transition: var(--bg-color-transition), var(--color-transition);
 }
 .menu-item:hover {
   background-color: var(--btn-bg-color);
+  color: #000;
 }
 
 /* dropdown menu ends */
 
-/* input */
+/* input starts */
 .input-wrapper input {
   transition: 150ms border ease-in;
   margin: 0;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  transition: var(--bg-color-transition);
 }
 
 .input-wrapper input:focus {
   border: 2px solid var(--primary-color);
   box-shadow: none;
+  color: #000;
 }
+/* input ends */
 
+/* custom-attribute starts */
 [data-info] {
   position: relative;
   transition: 350ms all ease-in-out;
@@ -94,7 +106,9 @@
   color: rgb(255, 255, 255);
   white-space: nowrap;
 }
+/* custom-attribute ends */
 
+/* media query */
 @media screen and (max-width: 998px) {
   .app {
     padding: 120px 10px 100px;

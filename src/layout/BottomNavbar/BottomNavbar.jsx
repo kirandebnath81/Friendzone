@@ -1,7 +1,8 @@
 import "../Navbar.css";
 import "./BottomNavbar.css";
 
-import navItems from "../navItemsData";
+//nav data
+import navItems from "../../data/navItems";
 
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";

@@ -1,21 +1,45 @@
 :root {
-  /* colors */
-  --primary-text-color: black;
   --secondary-text-color: grey;
-  --primary-bg-color: rgb(255, 255, 255);
-  --secondary-bg-color: rgba(251, 251, 251, 0.995);
+
   --btn-bg-color: rgb(238, 239, 255);
   --btn-hover-bg-color: rgb(222, 225, 255);
 
+  --color-transition: 250ms color ease-in-out;
+  --bg-color-transition: 250ms background-color ease-in-out;
+}
+
+[data-theme="light"] {
+  /* text-color */
+  --primary-text-color: rgb(0, 0, 0);
+
+  /* bg-color */
+  --primary-bg-color: rgb(250, 250, 250);
+  --secondary-bg-color: rgb(255, 255, 255);
+
+  /* avatar-color */
   --avatar-bg-color: rgb(3, 11, 108);
   --avatar-text-color: #ffff;
 
-  --light-box-shadow-color: rgba(0, 0, 0, 0.12);
+  /* --light-box-shadow-color: rgba(0, 0, 0, 0.12); */
 
   /* box-shadow */
   --light-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.12);
   --dark-box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
   --link-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="dark"] {
+  /* text-color */
+  --primary-text-color: rgb(255, 255, 255);
+
+  /* bg-color */
+  --primary-bg-color: rgb(2, 0, 32);
+  --secondary-bg-color: rgb(3, 0, 43);
+
+  /* box-shadow */
+  --light-box-shadow: 0px 1px 8px rgba(255, 255, 255, 0.3);
+  --dark-box-shadow: 0px 1.5px 6px rgba(255, 255, 255, 0.35);
+  --link-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 @media screen and (min-width: 769px) and (max-width: 998px) {

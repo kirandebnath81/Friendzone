@@ -53,8 +53,6 @@ const CreatePost = ({ handleModal, type, editedPost }) => {
   //upload post in the db
   const uploadPost = async () => {
     const user = allUsers[activeUser?.userName];
-    const { name, userName, avatar } = user;
-    // startLoading();
     const newPost = {
       text,
       image: imageUrl,
@@ -63,9 +61,9 @@ const CreatePost = ({ handleModal, type, editedPost }) => {
       comments: [],
       isCommentView: false,
       creator: {
-        name,
-        userName,
-        avatar,
+        name: user?.name,
+        userName: user?.userName,
+        avatar: user?.avatar || "",
       },
       createdTime: new Date().getTime(),
       isDropdown: false,

@@ -8,7 +8,7 @@ A Social Media App
 
 ```
 $ git clone https://github.com/kirandebnath81/Friendzone.git
-$ cd Socially
+$ cd Friendzone
 $ npm install
 $ npm start
 ```
